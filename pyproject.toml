@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "etcwatch"
+version = "0.1.0"
+description = "Linux file modification monitor via inotify"
+authors = ["Alexander Kevin Jackson <alexanderkjackson@protonmail.com>"]
+license = "GNU GPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+inotify-simple = "^1.3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
