@@ -68,3 +68,12 @@ GNU GPL v3
 ## Contributing
 
 Feel free to open issues, suggest improvements, or submit pull requests. When submitting pull requests, your code doesn't have to be good or tested. I'll take anything!
+
+## Current issues
+Partway through the project, an issue similar or identical to the following
+was encountered: https://github.com/python-poetry/poetry/issues/1917
+
+Quickfix: export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+More permanent fix, which I suspect will cause issues if using a private repo: python3 -m keyring --disable
+
+I don't anticipate using a private repo in this project, so the above will likely have no drawbacks.
